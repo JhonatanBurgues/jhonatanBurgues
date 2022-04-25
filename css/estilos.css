@@ -15,7 +15,7 @@ li a {
 
 li a:hover {
     color:#7dcacd;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 header nav {
@@ -195,13 +195,21 @@ header nav {
 }
 
 .bienvenidos h1 {
-    font-size: 60px;
+    font-size: 64px;
     font-weight: 600;
     padding: 25px 25px 55px 25px;
     color: aliceblue;
     font-family: 'Dancing Script', cursive;
     font-weight: 600;
-    
+    animation-name: titulo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes titulo {
+    0% {color: aliceblue;}
+    50% {color: #16A085;}
+    100% {color: #e2d28f;}
 }
 
 .comprar h2 {
@@ -228,6 +236,15 @@ header nav {
     color: rgba(0, 0, 0, 0.61);
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
+    animation-name: titulodisenios;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes titulodisenios {
+    0% {color: #F4D03F;}
+    50% {color: whitesmoke;}
+    100% {color: black;}
 }
 
 /* comienzo--galeria */
